@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sleep test</title>
+	<style>
+		@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+		body{
+			background-color: black;
+		}
+		#testpage1 {
+			position: absolute;
+			width:1200px;
+			left:calc(50% - 600px); 
+			margin:auto;
+			top: 100px;
+		}
+
+		input[type="radio" i] {
+    margin: 3px 3px 0px -12px;
+}
+		td{	height: 3em;
+			vertical-align: middle;
+			text-align: center;}
+
+		thead{border-collapse: collapse;}
+		tbody{left:-5px;}
+
+		#title { 
+			width:250px;
+			position: absolute; 
+			left: 4.5%;
+			top:5px;}
+
+
+		.qtop {
+			font-weight: 500;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-size: 1em;
+			color: white;
+			border-collapse : collapse;
+			margin-bottom: 1em;
+			border-spacing:0px;
+			padding:0px;}
+
+		.qbutton {
+			width: 100px;
+		}
+
+		.question {
+			font-weight: 500;
+			font-family: 'Noto Sans KR', sans-serif;
+			vertical-align: middle;
+			text-align: center;
+			color: white;
+			font-size: 3em;
+			width: 800px;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+
+		}
+
+			h3{
+				color:white;
+			}
+		tbody tr td:first-child {
+			text-align: left;
+			margin-right: 3em;}
+
+		table {
+			margin-left: auto;
+			margin-right: auto;
+			width: 1200px;
+			height: 1000px;
+
+		}
+		input[type="radio"] {visibility: hidden;}
+		input[type="radio"]:after {
+			width:2em;
+			height: 2em;
+			border-radius: 2em;
+			position: relative;
+
+			background-color: #000;
+			content: '';
+			display: inline-block;
+			visibility: visible;
+			border: 2px solid #8d8d8d;
+			
+		}
+		input[type="radio"]:checked:after{
+			
+			background-color: #fff;
+			content: '';
+			display: inline-block;
+			visibility: visible;
+			border: 2px solid #8d8d8d;
+			text-align: center;
+		}
+		tr{margin-bottom: 3em;}
+
+		#next {			
+			cursor: pointer;
+			height: 30px;
+			color: white;
+			float: right;
+			cursor: pointer;
+			margin-bottom: 3em;
+		}
+		#topbar{
+			width: 1500px;
+			z-index: 8;
+			position: fixed;
+			height: 50px;
+			background-color: black;
+			top:0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div id="topbar">
+				<img src="title.png" id="title">
+			</div>
+		<div id="testpage1">			
+			<form id="Ctest">
+				<table class="tabel" cellspacing="0">
+					<thead>
+						<tr>
+							<td class="qtop">  </td>
+							<td class="qtop">네</td>
+							<td class="qtop">아니오</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="question">1. 평균 수면 시간이 7시간 미만이다.</td>
+							<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+							<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+						</tr>
+						<tr>
+							<td class="question">2. 잠들기까지 5분이 채 안걸린다.</td>
+							<td class="qbutton"><input class="q2" type="radio" name="q2" value="5"/></td>
+							<td class="qbutton"><input class="q2" type="radio" name="q2" value="0"/></td>
+						</tr>
+						<tr>
+							<td class="question">3. 잠을 잘 때 코골이가 심하다.</td>
+							<td class="qbutton"><input class="q3" type="radio" name="q3" value="5"/></td>
+							<td class="qbutton"><input class="q3" type="radio" name="q3" value="0"/></td>
+						</tr>
+						<tr>
+							<td class="question">4. 깊은 잠을 자지 못하고 새벽에 종종 <br> 잠에서 깬다.</td>
+							<td class="qbutton"><input class="q4" type="radio" name="q4" value="5"/></td>
+							<td class="qbutton"><input class="q4" type="radio" name="q4" value="0"/></td>
+						</tr>
+						<tr>
+							<td class="question">5. 아침에 깨어났을 때 피곤하고 몸의 피로가<br> 안풀리며 활력이 없다.</td>
+							<td class="qbutton"><input class="q5" type="radio" name="q5" value="5"/></td>
+							<td class="qbutton"><input class="q5" type="radio" name="q5" value="0"/></td>
+						</tr>
+						<tr>
+							<td class="question">6. 독서를 하거나 TV를 볼 때 졸음에 빠진다.</td>
+							<td class="qbutton"><input class="q6" type="radio" name="q6" value="5"/></td>
+							<td class="qbutton"><input class="q6" type="radio" name="q6" value="0"/></td>
+						</tr>
+						<tr>
+							<td class="question">7. 잠자려고 누웠을 때 소름이 끼치는<br> 느낌이 들어 괴롭다.</td>
+							<td class="qbutton"><input class="q7" type="radio" name="q7" value="5"/></td>
+							<td class="qbutton"><input class="q7" type="radio" name="q7" value="0"/></td>
+						</tr>
+						<tr>
+							<td class="question">8. 잠이 든 후에도 온갖 잡생각이 떠오르거나 <br>꿈을 자주 꾼다.</td>
+							<td class="qbutton"><input class="q8" type="radio" name="q8" value="5"/></td>
+							<td class="qbutton"><input class="q8" type="radio" name="q8" value="0"/></td>
+						</tr>
+						<tr>
+							<td class="question">9. 낮에 쉽게 피곤해지고, 집중력이 떨어진다.</td>
+							<td class="qbutton"><input class="q9" type="radio" name="q9" value="5"/></td>
+							<td class="qbutton"><input class="q9" type="radio" name="q9" value="0"/></td>
+						</tr>
+						<tr>
+							<td class="question">10. 잠들기 전에 숙면을 취할 수 있을지 불안하다.</td>
+							<td class="qbutton"><input class="q10" type="radio" name="q10" value="5"/></td>
+							<td class="qbutton"><input class="q10" type="radio" name="q10" value="0"/></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<img src="next.png" id="next">
+			
+	</section>
+
+</body>
+<script type="text/javascript">
+	var total = 0;
+	var qcount = 0;
+
+
+
+
+function calculate(){
+
+		var t = document.getElementsByClassName("q1");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				qcount += parseInt(t[i].value);
+			}
+		}
+
+		
+
+		var b = document.getElementsByClassName("q2");
+		for(var i=0; i < b.length; i++){
+			console.log(b[i], b[i].checked);
+			if(b[i].checked == true){
+				qcount += parseInt(b[i].value);
+			}
+		}
+
+		
+
+		var c = document.getElementsByClassName("q3");
+		for(var i=0; i < c.length; i++){
+			console.log(c[i], c[i].checked);
+			if(c[i].checked == true){
+				qcount += parseInt(c[i].value);
+			}
+		}
+
+		
+
+		var d = document.getElementsByClassName("q4");
+		for(var i=0; i < d.length; i++){
+			console.log(d[i], d[i].checked);
+			if(d[i].checked == true){
+				qcount += parseInt(d[i].value);
+			}
+		}
+
+		
+
+		var e = document.getElementsByClassName("q5");
+		for(var i=0; i < e.length; i++){
+			console.log(e[i], e[i].checked);
+			if(e[i].checked == true){
+				qcount += parseInt(e[i].value);
+			}
+		}
+
+		
+
+		var f = document.getElementsByClassName("q6");
+		for(var i=0; i < f.length; i++){
+			console.log(f[i], f[i].checked);
+			if(f[i].checked == true){
+				qcount += parseInt(f[i].value);
+			}
+		}
+
+		
+
+		var g = document.getElementsByClassName("q7");
+		for(var i=0; i < g.length; i++){
+			console.log(g[i], g[i].checked);
+			if(g[i].checked == true){
+				qcount += parseInt(g[i].value);
+			}
+		}
+
+		
+
+		var h = document.getElementsByClassName("q8");
+		for(var i=0; i < h.length; i++){
+			console.log(h[i], h[i].checked);
+			if(h[i].checked == true){
+				qcount += parseInt(h[i].value);
+			}
+		}
+
+		
+
+		var p = document.getElementsByClassName("q9");
+		for(var i=0; i < p.length; i++){
+			console.log(p[i], p[i].checked);
+			if(p[i].checked == true){
+				qcount += parseInt(p[i].value);
+			}
+		}
+
+		
+
+		var j = document.getElementsByClassName("q10");
+		for(var i=0; i < j.length; i++){
+			console.log(j[i], j[i].checked);
+			if(j[i].checked == true){
+				qcount += parseInt(j[i].value);
+			}
+		}
+		console.log("총" + qcount + "점입니다." );	}
+
+
+	next.onclick = function(){ 
+		calculate(); 
+		console.log("nex");
+		var url = "sleeptest2.html?ttt=" + qcount;
+		var res = encodeURI(url);
+		location.href = res;
+
+
+}
+
+
+		
+
+
+</script>
+</html>

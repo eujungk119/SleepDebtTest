@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script src="processing-1.4.1.js"></script>
+		<script src="https://use.typekit.net/dcf1ame.js"></script>
+</head>
+<body>
+<script type="text/processing" data-processing-target="mycanvas">
+		void setup() {
+size(1400,720);
+
+stroke(255);
+strokeWeight(1);
+smooth();
+
+noCursor();
+}
+
+float v = 0;
+float w = 0;
+
+void draw() {
+fill(0,300);
+rect(0,0,width,height);
+
+noFill();
+beginShape();
+for(float x = 0; x < width; x += 1) {
+  vertex(x, height/2+40
+  *sin(v+(x/map(220,0,width,1,30)))
+  *tan(w+(x/map(10,0,width,150,80)))
+  *sin(v+(x/map(30,0,40,15,80)))
+  );
+}
+endShape();
+v -= 0.05;
+w += 0.02;
+}
+
+	</script>
+	<canvas id="mycanvas"></canvas>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>수면 빚</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="mySketch.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js" type="text/javascript"></script>
+	<script src="processing-1.4.1.js"></script>
+		<script src="https://use.typekit.net/dcf1ame.js"></script>
+
+		<script>
+		try{Typekit.load({ async: true });}catch(e){}			
+		</script>
+
+	<style type="text/css">
+			@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+			.tk-source-han-serif-korean{font-family:"source-han-serif-korean",serif;}
+			#mycanvas{position: absolute;}
+
+			img{position: absolute;
+				z-index: 6;
+				width: 1200px;
+				margin:auto; 
+				left:calc(50% - 600px);
+				top:15%;
+				}
+
+		
+		#sleepPopup{
+			display:none;
+			position: absolute;
+			width: 900px;
+			height: 400px;
+			background-color: black;
+			z-index: 6;
+			margin:auto; 
+			left:calc(50% - 450px);
+			top: 16%;
+			padding: 20px;
+			}
+
+		p{width: 500px;
+			left:25%;
+
+			text-align: left;
+			font-weight: 400; word-spacing: -1px; 
+			font-family: 'source-han-serif-korean', serif; 
+			font-size: 0.9em;
+			color: white;			
+			word-break: keep-all;
+			line-height: 175%;
+			position: relative;
+			 }
+		h3{ position: relative;
+		float: right; 
+		text-align: center;
+		border-bottom: 2px solid;
+		color: white;}
+
+
+		</style>
+</head>
+<body>
+	<div>
+		<img src="2.png" id="popimg">
+	</div>
+
+	<div id="sleepPopup">
+		<p> <b> 당신은 지금 적정한 시간의 수면을 취하고 있습니까?</b><br>
+			당신이 잠들지 않은 사이, 빚을 지고 있었습니다.<br>
+		
+			<br>
+			빚을 지고있다면 이자가 붙는 것처럼 수면 역시 이자가 붙습니다.<br>
+			인체와 정신에 평상시와는 다른 여러가지 현상들과 함께 말입니다. <br>
+			<br>
+			<b>혹시 수면의 양과 질을 간과하고 있지는 않습니까?</b><br>
+			현실과 마찬가지로 빚이 감당할 수 없을 만큼 커지면<br> 돌이킬 수 없는 불행한 결과를 맞이하게 됩니다. <br> 이 빚은 하루 오래 잔다고 해서 모두 사라지지 않습니다.<br>
+			<br>
+			테스트를 통해 당신이 수면 부족으로 인해  <br>평상시에 어떤 현상을 겪고 있는지 얼만큼 스스로에게 빚을 지고, <br> 또 어떤 현상을 초래하며, 몸에 어떤 부담을 주는 지 진단해보십시오. 
+		</p>
+		<a href="sleeptest.html">
+			<h3> 진단시작 </h3>
+		</a>
+	</div>
+
+</body>
+
+	</script>
+
+</body>
+</html>

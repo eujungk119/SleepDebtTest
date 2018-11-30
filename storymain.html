@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sleep debt credit test</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="sketch153224.js" type="text/javascript"></script>
+	<script src="https://www.openprocessing.org/assets/js/vendor/p5jsReleases/p5-release-0.5.7/p5.min.js" type="text/javascript"></script>
+	<script src="processing-1.4.1.js"></script>
+
+
+		<script>
+		try{Typekit.load({ async: true });}catch(e){}			
+		</script>
+
+	<style type="text/css">
+			@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+			.tk-source-han-serif-korean{font-family:"source-han-serif-korean",serif;}
+			#mycanvas{position: absolute;}
+
+			#popimg{position: absolute;
+				z-index: 6;
+				width: 650px;
+				margin:auto; 
+				left:calc(50% - 325px);
+				cursor: pointer;			
+			}
+
+			#img {
+			width:550px;
+			height: 550px;
+			position: absolute;
+			left:calc(50% - 275px);
+			top:calc(50% - 275px);
+			background-color: black;
+		}
+
+		body {	overflow-y: hidden;
+				padding : 0;
+				background : center center fixed;}
+
+
+		
+		#sleepPopup{
+			display:none;
+			position: absolute;
+			width: 550px;
+			height: 550px;
+			background-color: black;
+			z-index: 6;
+			margin:auto; 
+			left:calc(50% - 275px);
+			top:calc(50% - 275px);
+			}
+
+		#story2{
+			position: relative;
+			width: 450px;
+			padding:3em;}
+		#grade{position: absolute;
+			width: 490px;
+			left:calc(50% - 245px);}
+		h3{ 
+			padding-top: 6em;
+		padding-right: 2em;
+		position: relative;
+		float: right; 
+		text-align: center;
+		color: white;}
+
+
+
+
+		</style>
+</head>
+<body>
+	<div id="img">
+		<img src="1.png" id="popimg">
+	</div>
+
+	<div id="sleepPopup">
+		<img src="story2.png" id="story2">
+		<img src="grade.png" id="grade">
+		<a href="sleeptest.html">
+		<h3> 진단시작 </h3>
+		</a>
+		
+	</div>
+
+
+	<script type="text/javascript">
+
+		popimg.onclick = function showPopup() {
+			sleepPopup.style.display = "block"; 
+	  	}
+
+		
+	</script>
+	<canvas id="mycanvas"></canvas>
+</body>
+</html>
